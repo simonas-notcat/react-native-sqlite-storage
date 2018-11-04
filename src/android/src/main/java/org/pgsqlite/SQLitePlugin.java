@@ -9,9 +9,9 @@ package org.pgsqlite;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteStatement;
+import io.requery.android.database.sqlite.SQLiteDatabase;
+import io.requery.android.database.sqlite.SQLiteException;
+import io.requery.android.database.sqlite.SQLiteStatement;
 import android.content.Context;
 import android.util.Base64;
 
@@ -557,7 +557,7 @@ public class SQLitePlugin extends ReactContextBaseJavaModule {
     @SuppressLint("NewApi")
     private boolean deleteDatabaseNow(String dbname) {
         File dbfile = this.getContext().getDatabasePath(dbname);
-        return android.database.sqlite.SQLiteDatabase.deleteDatabase(dbfile);
+        return io.requery.android.database.sqlite.SQLiteDatabase.deleteDatabase(dbfile);
     }
 
     /**

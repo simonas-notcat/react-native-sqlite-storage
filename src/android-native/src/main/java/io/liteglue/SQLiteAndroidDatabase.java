@@ -10,9 +10,9 @@ package io.liteglue;
 import android.annotation.SuppressLint;
 
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteStatement;
+import io.requery.android.database.sqlite.SQLiteDatabase;
+import io.requery.android.database.sqlite.SQLiteException;
+import io.requery.android.database.sqlite.SQLiteStatement;
 
 import android.util.Base64;
 
