@@ -35,4 +35,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:0.14.+'
+    implementation 'io.requery:sqlite-android:3.25.2'
 }
